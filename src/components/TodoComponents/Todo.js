@@ -5,7 +5,7 @@ import Item from "./TodoForm";
 const Todo = props => {
   return (
     <div className="Todo-list">
-      {props.stuff.map(item => (
+      {props.tasks.map(item => (
         <Item key={item.id} item={item} togglecomplete={props.togglecomplete} />
       ))}
 

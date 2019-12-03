@@ -4,57 +4,58 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-const data = [{
-        name: "Create To Do App",
+const data = [
+  {
+    name: "Create To Do App",
 
-        id: 1,
+    id: 1,
 
-        complete: false
-    },
+    complete: false
+  },
 
-    {
-        name: "Create To Do List",
+  {
+    name: "Create To Do List",
 
-        id: 2,
+    id: 2,
 
-        complete: false
-    },
+    complete: false
+  },
 
-    {
-        name: "Create To Do Items",
+  {
+    name: "Create To Do Items",
 
-        id: 3,
+    id: 3,
 
-        complete: false
-    },
+    complete: false
+  },
 
-    {
-        name: "Complete To Do Items",
+  {
+    name: "Complete To Do Items",
 
-        id: 4,
+    id: 4,
 
-        complete: false
-    },
+    complete: false
+  },
 
-    {
-        name: "Complete To Do List",
+  {
+    name: "Complete To Do List",
 
-        id: 5,
+    id: 5,
 
-        complete: false
-    },
+    complete: false
+  },
 
-    {
-        name: "Repeate",
+  {
+    name: "Repeate",
 
-        id: 6,
+    id: 6,
 
-        complete: false
-    }
+    complete: false
+  }
 ];
 
 export default data;
 
 const rootElement = document.getElementById("root");
 
-ReactDOM.render( < App / > , rootElement);
+ReactDOM.render(<App />, rootElement);

@@ -16,7 +16,7 @@ class App extends React.Component {
   // this component is going to take care of state, and any change handlers you need to work with your state
 
   state = {
-    stuff: data,
+    tasks: data,
 
     otherState: "this other state"
   };
@@ -25,7 +25,7 @@ class App extends React.Component {
     console.log("togglecomplete: ", itemId);
 
     this.setState({
-      stuff: this.state.stuff.map(item => {
+      tasks: this.state.tasks.map(item => {
         if (item.id === itemId) {
           return {
             ...item,
@@ -43,7 +43,7 @@ class App extends React.Component {
     console.log("clearcomplete");
 
     this.setState({
-      stuff: this.state.stuff.filter(item => {
+      tasks: this.state.tasks.filter(item => {
         return !item.complete;
       })
     });
@@ -53,8 +53,8 @@ class App extends React.Component {
     console.log("add item: ", itemName);
 
     this.setState({
-      stuff: [
-        ...this.state.stuff,
+      tasks: [
+        ...this.state.tasks,
 
         {
           name: itemName,
@@ -79,7 +79,7 @@ class App extends React.Component {
         </div>
 
         <Todo
-          stuff={this.state.stuff}
+          tasks={this.state.tasks}
           togglecomplete={this.togglecomplete}
           clearcomplete={this.clearcomplete}
         />
