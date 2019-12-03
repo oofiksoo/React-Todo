@@ -1,5 +1,60 @@
-import React from 'react';
-import { render } from 'react-dom';
-import App from './App';
+import React from "react";
 
-render(<App />, document.getElementById('root'));
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+const data = [{
+        name: "Create To Do App",
+
+        id: 1,
+
+        complete: false
+    },
+
+    {
+        name: "Create To Do List",
+
+        id: 2,
+
+        complete: false
+    },
+
+    {
+        name: "Create To Do Items",
+
+        id: 3,
+
+        complete: false
+    },
+
+    {
+        name: "Complete To Do Items",
+
+        id: 4,
+
+        complete: false
+    },
+
+    {
+        name: "Complete To Do List",
+
+        id: 5,
+
+        complete: false
+    },
+
+    {
+        name: "Repeate",
+
+        id: 6,
+
+        complete: false
+    }
+];
+
+export default data;
+
+const rootElement = document.getElementById("root");
+
+ReactDOM.render( < App / > , rootElement);

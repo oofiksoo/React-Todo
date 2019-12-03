@@ -1,12 +1,17 @@
 import React from "react";
 
+import Item from "./TodoForm";
+
 const Todo = props => {
   return (
-    <div
-      style={props.todo.completed ? { textDecoration: "line-through" } : null}
-      onClick={() => props.handleToggleComplete(props.todo.id)}
-    >
-      {props.todo.task}
+    <div className="Todo-list">
+      {props.stuff.map(item => (
+        <Item key={item.id} item={item} togglecomplete={props.togglecomplete} />
+      ))}
+
+      <button className="clear-btn" onClick={props.clearcomplete}>
+        Clear complete
+      </button>
     </div>
   );
 };

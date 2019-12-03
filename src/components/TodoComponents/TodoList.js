@@ -3,20 +3,49 @@
 
 import React from "react";
 
-import Todo from "./Todo";
+class TodoList extends React.Component {
+  constructor() {
+    super();
 
-const TodoList = props => {
-  return (
-    <div>
-      {props.todos.map(todo => (
-        <Todo
-          handleToggleComplete={props.handleToggleComplete}
-          key={todo.id}
-          todo={todo}
+    this.state = {
+      itemName: ""
+    };
+  }
+
+  handleChanges = e => {
+    this.setState({
+      itemName: e.target.value
+    });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+    if (this.state.itemName !== "") {
+      this.props.addItem(this.state.itemName);
+
+      this.setState({
+        itemName: ""
+      });
+    }
+  };
+
+  render() {
+    console.log("rendering form");
+
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <input
+          onChange={this.handleChanges}
+          type="text"
+          name="item"
+          value={this.state.itemName}
         />
-      ))}
-    </div>
-  );
-};
+
+        <button>Add</button>
+      </form>
+    );
+  }
+}
 
 export default TodoList;

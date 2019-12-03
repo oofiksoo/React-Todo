@@ -1,18 +1,20 @@
 import React from "react";
 
 const TodoForm = props => {
+  let verboseClassName = "item";
+
+  if (props.item.complete) {
+    verboseClassName = verboseClassName + " complete";
+  }
+
+  const handleClick = () => {
+    props.togglecomplete(props.item.id);
+  };
+
   return (
-    <form>
-      <input
-        onChange={props.handleTodoChange}
-        type="text"
-        name="todo"
-        value={props.value}
-        placeholder="...todo"
-      />
-      <button onClick={props.handleAddTodo}> Add Todo </button>
-      <button onClick={props.handleClearTodos}> Clear Completed </button>
-    </form>
+    <div onClick={handleClick} className={verboseClassName}>
+      <p>{props.item.name}</p>
+    </div>
   );
 };
 
