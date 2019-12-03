@@ -6,26 +6,20 @@ import App from "./App";
 
 const data = [
   {
-    name: "Create To Do App",
+    name: "Write Javascript Code",
     id: 1,
     complete: false
   },
 
   {
-    name: "Create To Do List",
+    name: "Write More Javascript Code",
     id: 2,
     complete: false
   },
 
   {
-    name: "Complete To Do List",
+    name: "Start List at Begining",
     id: 3,
-    complete: false
-  },
-
-  {
-    name: "Repeate",
-    id: 4,
     complete: false
   }
 ];
