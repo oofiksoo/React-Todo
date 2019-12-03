@@ -7,49 +7,25 @@ import App from "./App";
 const data = [
   {
     name: "Create To Do App",
-
     id: 1,
-
     complete: false
   },
 
   {
     name: "Create To Do List",
-
     id: 2,
-
-    complete: false
-  },
-
-  {
-    name: "Create To Do Items",
-
-    id: 3,
-
-    complete: false
-  },
-
-  {
-    name: "Complete To Do Items",
-
-    id: 4,
-
     complete: false
   },
 
   {
     name: "Complete To Do List",
-
-    id: 5,
-
+    id: 3,
     complete: false
   },
 
   {
     name: "Repeate",
-
-    id: 6,
-
+    id: 4,
     complete: false
   }
 ];
