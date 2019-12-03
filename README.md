@@ -66,3 +66,4 @@ We're going to practice building a stateful class component with this project. E
 
 - **Hosting** Create a [Netlify Account](https://www.netlify.com/) and follow the tutorial on how to host your shiny new todo app on the world wide web.
   initial commit.
+  https://joseph-todolist.herokuapp.com/
